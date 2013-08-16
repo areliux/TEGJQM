@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+<style>
+
+</style>
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css"/>
+
+
+    <!-- The Templates -->
+    <script type="text/template" id="home">
+	 <div data-role="panel" 
+            id="left-panel" 
+            data-display="push" 
+            data-position="left"
+            data-position-fixed="true"
+            data-theme="a">
+            <ul data-role="listview" data-theme="a" class="nav-search">
+                <li data-icon="delete" data-theme="d"><a href="#" data-rel="close">Proyectos Prioritarios</a></li>
+                <li><a href="#">Plan Altos de Morelos</a></li>
+                <li><a href="#">Riesgos Sanitarios</a></li>
+                <li><a href="#">Beca Salario Universal</a></li>
+                <li><a href="#">Mortalidad Materna</a></li>
+                <li><a href="#">Ley de V&iacute;ctimas</a></li>
+                <li><a href="#">Empresas Mujer Morelense</a></li>
+            </ul>
+        </div><!-- /panel -->        
+		<div data-role="panel" 
+            id="right-panel" 
+            data-display="push" 
+            data-position="right" 
+            data-position-fixed="true"
+            data-theme="a">
+           <ul data-role="listview"  data-inset="true" data-theme="a">
+    <li><a href="#">
+        <img src="img/1.png">
+        <h2>Prioridades</br> de gobierno</h2>
+       <!-- <p>Broken Bells</p>-->
+	   </a>
+    </li>
+    <li><a href="#">
+        <img src="img/2.png">
+        <h2>Gobierno </br> en RED</h2>
+       <!-- <p>Hot Chip</p>-->
+	   </a>
+    </li>
+    <li><a href="#">
+        <img src="img/3.png">
+        <h2>Fichas</br> Municipales</h2>
+      <!--  <p>Phoenix</p>-->
+	  </a>
+    </li>
+	<li><a href="#">
+        <img src="img/4.png">
+        <h2>Plan estatal </br>de desarollo</h2>
+       <!-- <p>Phoenix</p>-->
+	   </a>
+    </li>
+	<li><a href="#">
+        <img src="img/5.png">
+        <h2>Obra publica</h2>
+        <!--<p>Phoenix</p>-->
+		</a>
+    </li>
+</ul>  
+        </div><!-- /panel -->
+        <div data-role='header' data-position='fixed' >
+            <h1>TEG - Tablero Estrat&eacute;gico De Gobierno</h1>
+			
+            <a href="#left-panel" data-role="button" data-icon="arrow-r" 
+               
+                data-shadow="false" 
+				data-reveal="overlay"
+                data-iconshadow="false" 
+				data-dismissible="true"
+                class="ui-icon-nodisc">Proyectos
+            </a>
+			<a href="#right-panel" data-icon="home" data-theme="b"   
+                data-shadow="false" 
+                data-iconshadow="false" 
+                class="ui-icon-nodisc">Men&uacute; Principal</a>
+			
+            
+            <div data-role="navbar" data-theme="a" data-iconpos="left">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist">Resumen</a></li>
+                    <li><a href="#page1">Descripci&oacute;n</a></li>
+                    <li><a href="#">Finanzas</a></li>
+                    <li><a href="#">Impactos</a></li>
+                    <li><a href="#">Actividades</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+
+        <div data-role="content">
+		
+	<!--<div id="res">	
+<!--<label for="alto">Alto</label>
+<!--<input id="alto" name="alto" value="">-->
+ 
+<!--<label for="ancho">Ancho</label>-->
+<!--<input id="ancho" name="ancho" value="">-->
+ 
+<!--<div id="resultado" style="margin-top: 2em"></div>-->
+<!--</div>-->
+
+            <h3>Diseño de Applicacion para usar Backbone.js y jQuery Mobile.</h3>
+            <p>Backbone.js is used for code organization (Models, Views) and "routing".</p>
+            <p>jQuery Mobile is used for its mobile styles and widgets. The routing and navigation capabilities of jQuery Mobile are disbled to let Backbone.js handle these requirements.</p>
+            <p>This is the Home page. It was created dynamically using an underscore.js template.</p>
+            <p>Navigate to:</p>
+            <ul data-role="listview"  data-inset="true">
+                <li><a href="#page1" data-transition="slide">Page 1</a></li>
+                <li><a href="#page2"  data-transition="slide">Page 2</a></li>
+            </ul>
+        </div>
+
+
+ 
+		
+    </script>
+
+    <script type="text/template" id="page1">
+	 
+	
+	 <div data-role="panel" data-position-fixed="true" data-theme="a" id="left-panel">
+            <ul data-role="listview" data-theme="a" class="nav-search">
+                <li data-icon="delete" data-theme="d"><a href="#" data-rel="close">Proyectos Prioritarios</a></li>
+                <li><a href="#home">Plan Altos de Morelos</a></li>
+                <li><a href="#home">Riesgos Sanitarios</a></li>
+                <li><a href="#home">Beca Salario Universal</a></li>
+                <li><a href="#home">Mortalidad Materna</a></li>
+                <li><a href="#home">Ley de V&iacute;ctimas</a></li>
+                <li><a href="#home">Empresas Mujer Morelense</a></li>
+            </ul>
+			</div>
+	<!-- /panel -->        
+		<div data-role="panel" 
+            id="right-panel" 
+            data-display="push" 
+            data-position="right" 
+            data-position-fixed="true"
+            data-theme="a">
+           <ul data-role="listview" data-inset="true" data-theme="a">
+    <li><a href="#">
+        <img src="img/1.png">
+        <h2>Prioridades</br> de gobierno</h2>
+       <!-- <p>Broken Bells</p>-->
+	   </a>
+    </li>
+    <li><a href="#">
+        <img src="img/2.png">
+        <h2>Gobierno </br> en RED</h2>
+       <!-- <p>Hot Chip</p>-->
+	   </a>
+    </li>
+    <li><a href="#">
+        <img src="img/3.png">
+        <h2>Fichas</br> Municipales</h2>
+      <!--  <p>Phoenix</p>-->
+	  </a>
+    </li>
+	<li><a href="#">
+        <img src="img/4.png">
+        <h2>Plan estatal </br>de desarollo</h2>
+       <!-- <p>Phoenix</p>-->
+	   </a>
+    </li>
+	<li><a href="#">
+        <img src="img/5.png">
+        <h2>Obra publica</h2>
+        <!--<p>Phoenix</p>-->
+		</a>
+    </li>
+</ul>  
+        </div><!-- /panel -->
+
+         <div data-role='header' data-position='fixed' >
+            <h1>TEG - Tablero Estrat&eacute;gico De Gobierno</h1>
+           <a href="#left-panel" data-role="button" data-icon="arrow-r" 
+               
+                data-shadow="false" 
+				data-reveal="overlay"
+                data-iconshadow="false" 
+				data-dismissible="true"
+                class="ui-icon-nodisc">Proyectos
+            </a>
+			<a href="#right-panel" data-icon="home" data-theme="b"   
+                data-shadow="false" 
+                data-iconshadow="false" 
+                class="ui-icon-nodisc">Men&uacute; Principal</a>
+			
+            
+            <div data-role="navbar" data-theme="a" data-iconpos="left">
+                <ul>
+                    <li><a href="#">Resumen</a></li>
+                    <li><a href="#page1"  class="ui-btn-active ui-state-persist">Descripci&oacute;n</a></li>
+                    <li><a href="#">Finanzas</a></li>
+                    <li><a href="#">Impactos</a></li>
+                    <li><a href="#">Actividades</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <div data-role="content">
+          <form action="#" method="post">
+		 
+	<label for="username">Nombre:</label>
+	<input type="text" name="username" id="username" value="" placeholder="Username"/>
+<div data-role="fieldcontain" class="ui-hide-label">
+    
+	   <legend>Sexo:</legend>
+	   <fieldset data-role="controlgroup">
+	   <input type="checkbox" name="checkbox-agree" id="checkbox-agree" class="custom" />
+	   <label for="checkbox-agree">Femenino</label>
+	    <input type="checkbox" name="checkbox-noagree" id="checkbox-noagree" class="custom" />
+	   <label for="checkbox-noagree">Masculino</label>
+    </fieldset>
+</div>
+<label for="select-choice-0" class="select">Ciudad:</label>
+<select name="select-choice-0" id="select-choice-0">
+   <option value="standard">Cuernavaca</option>
+   <option value="rush">Cuautla</option>
+   <option value="express">Zapata</option>
+   <option value="overnight">Overnight</option>
+</select>
+
+<div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+        <legend>Fecha de nacimiento:</legend>
+    
+        <label for="select-choice-month">Mes</label>
+        <select name="select-choice-month" id="select-choice-month">
+            <option>Mes</option>
+            <option value="jan">Enero</option>
+            <!-- etc. -->
+        </select>
+    
+        <label for="select-choice-day">Dia</label>
+        <select name="select-choice-day" id="select-choice-day">
+            <option>Dia</option>
+            <option value="1">1</option>
+            <!-- etc. -->
+        </select>
+    
+        <label for="select-choice-year">Año</label>
+        <select name="select-choice-year" id="select-choice-year">
+            <option>Anio</option>
+            <option value="2011">2011</option>
+            <!-- etc. -->
+        </select>
+        
+    </fieldset>
+</div>
+
+	
+<label for="textarea-a">Textarea:</label>
+<textarea name="textarea" id="textarea-a">
+fgfdgdgdhfdgd
+</textarea>
+	
+<fieldset data-role="controlgroup">
+	<legend>Escoge una opcion:</legend>
+     	<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+     	<label for="radio-choice-1">gato</label>
+
+     	<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+     	<label for="radio-choice-2">perro</label>
+
+     	<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+     	<label for="radio-choice-3">Hamster</label>
+
+     	<input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+     	<label for="radio-choice-4">cotorro</label>
+</fieldset>
+
+<input type="submit" value="Enviar" data-theme="b" data-inline="true"/>
+<input type="reset" value="Limpiar" data-inline="true"/>
+		  </form>   
+			
+        </div>
+
+    </script>
+
+    <script type="text/template" id="page2">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>Page 2</h1>
+        </div>
+
+        <div data-role="content">
+            <p>This is Page 2. It was created dynamically using an underscore.js template.</p>
+            <p>Navigate to:</p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#"  data-transition="slide">Home</a></li>
+                <li><a href="#page1"  data-transition="slide">Page 1</a></li>
+            </ul>
+        </div>
+
+    </script>
+
+    <!-- The Scripts -->
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="js/jqm-config.js"></script>
+    <script src="js/lib/jquery.mobile-1.3.2.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+   <!-- <script src="js/main_model.js"></script>-->
+</head>
+
+<body> 
+  
+
+</body> <script type="text/javascript" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+            app.initialize();
+     </script>
+   
+</html>
+
+    
